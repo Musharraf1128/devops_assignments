@@ -1,0 +1,49 @@
+[
+    {
+        "Name": "backend-network",
+        "Id": "e11e18bbad064ae60760a672e3b691bdd8f2fa1fb785355b500cdaa4a91b23b9",
+        "Created": "2026-09-05T02:14:06.875193414+05:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.20.0.0/16",
+                    "Gateway": "172.20.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "9bd617fb7a3d0daefe7118bcfa61093be528e020ae63746fdc7cc6318b407080": {
+                "Name": "backend",
+                "EndpointID": "bc64b596f765bab29ab482cc860b5cee2547942b2c94c01afefbec42c0088398",
+                "MacAddress": "9a:42:b7:03:76:d5",
+                "IPv4Address": "172.20.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.20.0.0/16": {
+                        "IPsInUse": 4,
+                        "DynamicIPsAvailable": 65532
+                    }
+                }
+            }
+        }
+    }
+]

@@ -31,12 +31,13 @@ backend is connected to frontend-network and database-network, so it can talk to
 both frontend and database. Frontend and database are separated from each other.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: docker network ls, the three docker network inspect outputs,
-and ping commands from frontend/backend.
-```
+![Docker network list and inspect output](../images/networks.png)
+
+Connectivity ping output is documented below.
+
+![Container connectivity output](../images/connectivity.png)
 
 ---
 
@@ -58,11 +59,9 @@ Host network means the container uses the host network directly. There is no -p
 port mapping because Apache listens directly on host port 80.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: browser showing Apache page on http://localhost:80 and docker ps.
-```
+![Apache host-network output](../images/host_network.png)
 
 ---
 
@@ -87,12 +86,11 @@ A bind mount maps a local folder to a container folder. When index.html is chang
 on my machine, Nginx shows the updated content without rebuilding or restarting.
 ```
 
-### Screenshot Placeholder
+### Screenshots
 
-```
-Add one screenshot showing Hello students, then edit index.html and add another
-screenshot showing the changed text without restarting nginx-bind.
-```
+![Bind mount before editing](../images/bind_before.png)
+
+![Bind mount after editing](../images/bind_after.png)
 
 ---
 
@@ -114,8 +112,6 @@ docker service create --name web --network my-overlay-network nginx:alpine
 docker network ls
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: docker network ls after creating my-overlay-network.
-```
+![Docker overlay network](../images/overlay.png)

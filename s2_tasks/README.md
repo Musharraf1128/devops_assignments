@@ -25,11 +25,9 @@ hard link can still access the data. Soft link stores the path of original file.
 If original file is deleted then soft link becomes broken.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: ls -li, cat hard-link.txt and cat soft-link.txt output.
-```
+![Hard and soft link output](../images/links.png)
 
 ---
 
@@ -51,11 +49,9 @@ for home directory, shell and password. adduser is more friendly on Ubuntu/Debia
 It asks questions and creates the home directory, so I prefer adduser.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: sudo adduser testuser and id testuser output.
-```
+![adduser and id output](../images/add_user.png)
 
 ---
 
@@ -76,11 +72,9 @@ journalctl is used to see system logs collected by systemd. We can use -u with a
 service name to see logs only for that service. -n shows the last number of lines.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of: journalctl -u ssh -n 20 --no-pager output.
-```
+![journalctl output](../images/journalctl.png)
 
 ---
 
@@ -102,8 +96,6 @@ Add screenshot of: journalctl -u ssh -n 20 --no-pager output.
 | `df -h` | shows disk usage |
 | `ps aux` | shows running processes |
 
-### Screenshot Placeholder
+### Screenshot
 
-```
-Add screenshot of important commands practiced from the cheat sheet.
-```
+![Linux command cheat sheet output](../images/cheatsheet.png)

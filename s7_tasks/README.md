@@ -18,12 +18,11 @@ curl http://localhost:8080
 Hello World from Docker multi-stage build
 ```
 
-### Screenshot Placeholder
+### Screenshots
 
-```
-Add screenshot of browser or curl output showing the Hello World message.
-Add screenshot of: docker ps showing multi-stage-app on port 8080.
-```
+![Multi-stage application output](../images/multistage_output.png)
+
+![Multi-stage container](../images/multistage_docker_ps.png)
 
 ---
 
@@ -52,9 +51,10 @@ docker build -t deployment-java ./java-app
 docker run -d --name deployment-java -p 8081:8080 deployment-java
 ```
 
-### Screenshot Placeholder
+### Screenshots
 
-```
-Add screenshot of: docker ps showing Node.js, Python and Java containers running.
-Add browser/curl output screenshots for ports 8080, 5001 and 8081.
-```
+The multi-stage container above provides the Node.js deployment on port 8080.
+
+![Deployment application output](../images/deployment_output.png)
+
+![Deployment containers](../images/deployment.png)

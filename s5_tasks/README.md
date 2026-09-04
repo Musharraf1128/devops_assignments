@@ -31,15 +31,11 @@ git commit -a -m automatically stages changes in already tracked files, but new
 file still needs git add first.
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```text
-Take screenshot of: git status and git log --oneline.
-Save it as: images/s5-commit-a.png
-```
+![git commit -a output](../images/commit-a.png)
 
 ```
-
 
 
 

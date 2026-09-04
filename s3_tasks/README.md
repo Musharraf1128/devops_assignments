@@ -190,9 +190,6 @@ df -h > system_info/disk_usage.log
 cat system_info/disk_usage.log
 ```
 
-### Screenshot Placeholder
+### Screenshot
 
-```text
-Take one screenshot of the above command output.
-Save it as: images/s3-disk-usage.png
-```
+![Disk usage output](../images/disk_usage.png)

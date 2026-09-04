@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "database-network",
+        "Id": "219f741d86f29a43e55a21fabdf20b2151be5b85b5470930e21488233fb2c08f",
+        "Created": "2026-09-05T02:14:11.231853721+05:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.21.0.0/16",
+                    "Gateway": "172.21.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "2e87e26453f5f82f1a5997beaf2d1a78ee84e306680fda73e689235e12d4cfe8": {
+                "Name": "database",
+                "EndpointID": "2dc8aede1019d2be515f5f8ccfab7fff178f74a78c11f0b3653f38154a5ab4f4",
+                "MacAddress": "f2:27:3e:74:98:69",
+                "IPv4Address": "172.21.0.2/16",
+                "IPv6Address": ""
+            },
+            "9bd617fb7a3d0daefe7118bcfa61093be528e020ae63746fdc7cc6318b407080": {
+                "Name": "backend",
+                "EndpointID": "863c0b1524c6c9ce7b785eecd21e0db619d35d83eb76b162325c2eedbc6b5411",
+                "MacAddress": "62:b9:d4:4a:1c:c1",
+                "IPv4Address": "172.21.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.21.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    }
+]

@@ -5,6 +5,10 @@
 ![Command: ](./image1.png)
 ![Output](./image2.png)
 
+## Basic Docker Commands
+
+![Docker command output](../images/docker_basic_commands.png)
+
 
 ---
 
@@ -43,19 +47,37 @@ docker run -d --name nginx-app -p 8084:80 nginx-app
 docker ps
 ```
 
-### Screenshot Placeholder
+### Node.js Screenshot
 
-```text
-Take browser screenshot where Hello World is showing for every app.
-Also take docker ps screenshot. Ports are 3000, 5000, 8081, 8082, 8083 and 8084.
-```
+![Node.js Docker command output](../images/nodejs_output.png)
 
+![Node.js application](../images/nodejs.png)
 
+### Python Screenshot
 
+![Python application](../images/python.png)
 
+### Java Screenshot
 
+![Java Docker command output](../images/java_output.png)
 
+![Java application](../images/java.png)
 
+### Apache Screenshot
+
+![Apache Docker command output](../images/apache_output.png)
+
+![Apache application](../images/apache.png)
+
+### React Screenshot
+
+![React Docker command output](../images/react_output.png)
+
+![React application](../images/react.png)
+
+### Running Containers
+
+![Docker ps showing the application containers](../images/docker_ps.png)
 
 
 

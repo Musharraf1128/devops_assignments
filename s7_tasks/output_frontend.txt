@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "frontend-network",
+        "Id": "254328ff63f88f633620f76cf747d057e4023c97e140a49161ad78dc9866ade7",
+        "Created": "2026-09-05T02:13:58.270929115+05:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.19.0.0/16",
+                    "Gateway": "172.19.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "9bd617fb7a3d0daefe7118bcfa61093be528e020ae63746fdc7cc6318b407080": {
+                "Name": "backend",
+                "EndpointID": "cf95aed79035e03d110174277ae67ef2bb1c16152245e156c0d2810c1bb3443a",
+                "MacAddress": "ae:9a:1a:a5:3d:7a",
+                "IPv4Address": "172.19.0.3/16",
+                "IPv6Address": ""
+            },
+            "c2eb7a18395a43cb7c7fd9f80b08b337a21cf71590978decd44b755593fa5916": {
+                "Name": "frontend",
+                "EndpointID": "5aecf07a1068f81b4e404616dd1183f74aa34e696cf334aa6f369c5314bd8b38",
+                "MacAddress": "d2:5b:8a:d6:9b:26",
+                "IPv4Address": "172.19.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.19.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    }
+]
