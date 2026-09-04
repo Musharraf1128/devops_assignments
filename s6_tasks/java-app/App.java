@@ -1,0 +1,17 @@
+import com.sun.net.httpserver.HttpServer;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        server.createContext("/", exchange -> {
+            String response = "<h1>Hello World from Java</h1>";
+            exchange.sendResponseHeaders(200, response.length());
+            OutputStream output = exchange.getResponseBody();
+            output.write(response.getBytes());
+            output.close();
+        });
+        server.start();
+    }
+}

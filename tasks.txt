@@ -1,0 +1,182 @@
+
+
+› can tou now give me a simple guide to get the screenshots, with commands and all, and i will take them add them in an image folder, then you can use them.
+
+
+• Run this once first:
+
+  cd ~/workspace/github.com/Musharraf1128/devops_homework
+  mkdir -p images
+
+  Save every screenshot inside images/ using the shown filename.
+
+  ## S2 Linux
+
+  cd s2_tasks
+  mkdir -p links
+  cd links
+  echo "This is a file" > original.txt
+  ln original.txt hard-link.txt
+  ln -s original.txt soft-link.txt
+  ls -li
+  cat hard-link.txt
+  cat soft-link.txt
+
+  Screenshot → images/s2-links.png
+
+  sudo adduser testuser
+  id testuser
+
+  Screenshot → images/s2-adduser.png
+
+  journalctl -u ssh -n 20 --no-pager
+
+  Screenshot → images/s2-journalctl.png
+
+  pwd
+  ls -la
+  df -h
+  ps aux
+
+  Screenshot → images/s2-cheatsheet.png
+
+  Afterward, optionally remove the test user:
+
+  sudo deluser --remove-home testuser
+
+  ## S3 Shell script
+
+  cd ~/workspace/github.com/Musharraf1128/devops_homework/s3_tasks
+  ./task.sh
+  cat system_info/process.log
+
+  Enter your name when prompted.
+
+  Screenshot → images/s3-task.png
+
+  ## S4 Networking
+
+  Run these commands separately and capture each output:
+
+  hostname -i
+  ip a
+  ip route
+  nslookup google.com
+  curl -I https://linux.org
+  ss -tuln
+  tracepath google.com
+
+  Suggested names:
+
+  images/s4-hostname.png
+  images/s4-ip-a.png
+  images/s4-ip-route.png
+  images/s4-nslookup.png
+  images/s4-curl.png
+  images/s4-ss.png
+  images/s4-tracepath.png
+
+  ## S5 Git
+
+  Use a temporary Git repository so this task does not affect the homework repository:
+
+  cd /tmp
+  mkdir git-practice
+  cd git-practice
+  git init -b main
+  git config user.name "Musharraf"
+  git config user.email "your-email@example.com"
+
+  echo "first line" > commit-a.txt
+  git add commit-a.txt
+  git commit -m "add commit a file"
+
+  echo "second line" >> commit-a.txt
+  git commit -a -m "update tracked file using -a"
+  git log --oneline
+
+  Screenshot → images/s5-commit-a.png
+
+  echo "main commit 1" > main.txt
+  git add main.txt
+  git commit -m "add main commit 1"
+
+  git switch -c feature-cherry-pick
+  echo "feature commit 1" > feature.txt
+  git add feature.txt
+  git commit -m "add feature commit 1"
+  echo "feature commit 2" >> feature.txt
+  git commit -am "add feature commit 2"
+  git log --oneline
+
+  Screenshot → images/s5-feature-log.png
+
+  Copy the commit hash for add feature commit 1, then:
+
+  git switch main
+  git cherry-pick <paste-feature-commit-hash-here>
+  git log --oneline
+  cat feature.txt
+
+  Screenshot → images/s5-cherry-pick.png
+
+  ## S6 Docker apps
+
+  cd ~/workspace/github.com/Musharraf1128/devops_homework/s6_tasks
+
+  docker build -t nodejs-app ./nodejs-app
+  docker run -d --name nodejs-app -p 3000:3000 nodejs-app
+
+  docker build -t python-app ./python-app
+  docker run -d --name python-app -p 5000:5000 python-app
+
+  docker build -t java-app ./java-app
+  docker run -d --name java-app -p 8081:8080 java-app
+
+  docker build -t apache-app ./Apache-app
+  docker run -d --name apache-app -p 8082:80 apache-app
+
+  docker build -t react-app ./React-app
+  docker run -d --name react-app -p 8083:80 react-app
+
+  docker build -t nginx-app ./nginx-app
+  docker run -d --name nginx-app -p 8084:80 nginx-app
+
+  docker ps
+
+  Take browser screenshots:
+
+  http://localhost:3000 → images/s6-nodejs.png
+  http://localhost:5000 → images/s6-python.png
+  http://localhost:8081 → images/s6-java.png
+  http://localhost:8082 → images/s6-apache.png
+  http://localhost:8083 → images/s6-react.png
+  http://localhost:8084 → images/s6-nginx.png
+
+  Also capture docker ps → images/s6-docker-ps.png
+
+  ## S7 Multi-stage build
+
+  cd ~/workspace/github.com/Musharraf1128/devops_homework/s7_tasks/nodejs-multistage
+  docker build -t multi-stage-app .
+  docker run -d --name multi-stage-app -p 8080:8080 multi-stage-app
+  docker ps
+  curl http://localhost:8080
+
+  Capture:
+
+  images/s7-multistage-app.png
+  images/s7-multistage-docker-ps.png
+
+  ## S8 Docker networking and volumes
+
+  Run the commands in /home/razor/workspace/github.com/Musharraf1128/devops_homework/s8_tasks/README.md. Capture:
+
+  images/s8-networks.png       → docker network ls / inspect output
+  images/s8-connectivity.png   → ping commands from containers
+  images/s8-host-network.png   → Apache in browser and docker ps
+  images/s8-bind-before.png    → “Hello students” in browser
+  images/s8-bind-after.png     → changed index.html content in browser
+  images/s8-overlay.png        → docker network ls with overlay network
+
+devops-heros on  main [?] on ☁️  (us-east-1)
