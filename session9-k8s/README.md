@@ -47,7 +47,7 @@ The Minikube cluster was started successfully, verified all components are runni
 Documented the Control Plane components (kube-apiserver, etcd, kube-scheduler, kube-controller-manager) and Worker Node components (kubelet, kube-proxy, Container Runtime, Pod) based on official Kubernetes documentation.
 
 ### Screenshot
-![Kubernetes Architecture](./screenshots/architecture.png)
+![Kubernetes Architecture](./screenshots/architecture.svg)
 
 ---
 
