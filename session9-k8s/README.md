@@ -20,7 +20,7 @@ kubectl version --client
 Minikube and kubectl are successfully installed on the local system. Version commands confirm both tools are available and ready to use.
 
 ### Screenshot
-`![Minikube and Kubectl Version](./screenshots/version-check.png)`
+![Minikube and Kubectl Version](./screenshots/version-check.png)
 
 ---
 
@@ -37,7 +37,7 @@ minikube stop
 The Minikube cluster was started successfully, verified all components are running, and then stopped cleanly to release system resources.
 
 ### Screenshot
-`![Minikube Start](./screenshots/minikube-start.png)`
+![Minikube Start](./screenshots/minikube-start.png)
 
 ---
 
@@ -47,7 +47,7 @@ The Minikube cluster was started successfully, verified all components are runni
 Documented the Control Plane components (kube-apiserver, etcd, kube-scheduler, kube-controller-manager) and Worker Node components (kubelet, kube-proxy, Container Runtime, Pod) based on official Kubernetes documentation.
 
 ### Screenshot
-`![Kubernetes Architecture](./screenshots/architecture.png)`
+![Kubernetes Architecture](./screenshots/architecture.png)
 
 ---
 
