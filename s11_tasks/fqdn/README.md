@@ -46,4 +46,4 @@ search list so short name expands to FQDN automatically.
 
 ### Screenshot
 
-![FQDN lookup](../images/s11-fqdn.png)
+![FQDN lookup](../../images/s11-fqdn.png)
