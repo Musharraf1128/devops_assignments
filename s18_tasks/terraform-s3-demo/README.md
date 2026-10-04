@@ -22,9 +22,9 @@ checks syntax without touching AWS. All three must pass before plan.
 
 ### Screenshot
 
-![Terraform init](../images/s18-tf-init.png)
+![Terraform init](../../images/s18-tf-init.png)
 
-![Terraform fmt and validate](../images/s18-tf-fmt-validate.png)
+![Terraform fmt and validate](../../images/s18-tf-fmt-validate.png)
 
 ## 2. Plan and Apply
 
@@ -45,10 +45,10 @@ state file remembers the bucket for next runs.
 
 ### Screenshot
 
-![Terraform plan 1](../images/s18-tf-plan-1.png)
-![Terraform plan 2](../images/s18-tf-plan-2.png)
+![Terraform plan 1](../../images/s18-tf-plan-1.png)
+![Terraform plan 2](../../images/s18-tf-plan-2.png)
 
-![Terraform apply](../images/s18-tf-apply.png)
+![Terraform apply](../../images/s18-tf-apply.png)
 
 ## 3. Show and Output
 
@@ -69,7 +69,7 @@ these to confirm bucket really exists.
 
 ### Screenshot
 
-![Terraform show and output](../images/s18-tf-output.png)
+![Terraform show and output](../../images/s18-tf-output.png)
 
 ## 4. Destroy
 
@@ -89,4 +89,4 @@ Always destroy demo buckets so no bill comes.
 
 ### Screenshot
 
-![Terraform destroy](../images/s18-tf-destroy.png)
+![Terraform destroy](../../images/s18-tf-destroy.png)
