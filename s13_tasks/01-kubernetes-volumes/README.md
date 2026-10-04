@@ -72,6 +72,6 @@ making PV first.
 
 ### Screenshot
 
-![PV PVC and volume pods 1](../images/s13-volumes-1.png)
+![PV PVC and volume pods 1](../../images/s13-volumes-1.png)
 
-![PV PVC and volume pods 2](../images/s13-volumes-2.png)
+![PV PVC and volume pods 2](../../images/s13-volumes-2.png)
