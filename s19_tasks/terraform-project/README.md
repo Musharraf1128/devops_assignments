@@ -94,7 +94,7 @@ worked. s3 ls showed empty new bucket. Both compute and storage live.
 
 ### Screenshot
 
-![EC2 curl and outputs](../../images/s19-verify.png)
+![EC2 curl and outputs](../../images/s19-tf-verify.png)
 
 ## 4. Destroy
 
