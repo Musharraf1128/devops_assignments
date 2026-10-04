@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-ingress
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web-ingress
+  template:
+    metadata:
+      labels:
+        app: web-ingress
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.25-alpine
+          ports:
+            - containerPort: 80
