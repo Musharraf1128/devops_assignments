@@ -1,8 +1,8 @@
 # Session 16: CI/CD & GitHub Actions
 
-App is calculator in app/ folder, tests in tests/ folder. Workflow file
-is .github/workflows/ci.yml at repo root so GitHub runs it, same copy
-is kept here in s16_tasks/.github/workflows/ci.yml as proof.
+Live demo runs in separate repo https://github.com/Musharraf1128/hey-cicd
+(same app files at root there). Exact copy of that live workflow is kept
+here in s16_tasks/.github/workflows/ci.yml as proof.
 
 ## 1. CI vs CD and Pipeline
 
