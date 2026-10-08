@@ -32,6 +32,7 @@ field means. top shows cpu memory, needs metrics-server.
 ![Troubleshooting commands 1](../images/s14-commands-1.png)
 
 ![Troubleshooting commands 2](../images/s14-commands-2.png)
+
 ---
 
 ## 2. CrashLoopBackOff
@@ -70,8 +71,8 @@ Same demo covers both, ErrImagePull comes first then backoff.
 
 ```bash
 kubectl apply -f imagepull/broken-pod.yaml
-kubectl get pod image-demo
-kubectl get pod image-demo
+kubectl get pod image-demo   # first shows ErrImagePull
+kubectl get pod image-demo   # later shows ImagePullBackOff
 kubectl describe pod image-demo
 kubectl delete pod image-demo
 kubectl apply -f imagepull/fixed-pod.yaml
@@ -126,8 +127,8 @@ place it. Fix was removing nodeSelector, then it scheduled and ran.
 
 ```bash
 kubectl apply -f crashloop/fixed-pod.yaml
-kubectl get pod crash-demo
-kubectl get pod crash-demo
+kubectl get pod crash-demo   # shows ContainerCreating at first
+kubectl get pod crash-demo   # shows Running next
 kubectl delete pod crash-demo
 ```
 
@@ -164,9 +165,9 @@ kubectl get endpoints web-service
 
 ```
 Problem was service selector app does-not-exist matches no pods, so
-endpoints were <none> and curl failed. Root cause is label mismatch,
-not network. Fix was selector app web which matches deployment, then
-endpoints showed pod ips.
+endpoints were <none> and nothing could reach the pods. Root cause is
+label mismatch, not network. Fix was selector app web which matches
+deployment, then endpoints showed pod ips.
 ```
 
 ### Screenshot
@@ -201,6 +202,7 @@ needs. Fix was raising limit to 300Mi in fixed.yaml, then pod ran.
 ![OOMKilled and fix 1](../images/s14-oom-1.png)
 
 ![OOMKilled and fix 2](../images/s14-oom-2.png)
+
 ---
 
 ## 8. Mini Project
